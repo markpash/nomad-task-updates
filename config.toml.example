@@ -1,0 +1,11 @@
+server = "127.0.0.1:4646"
+namespaces = [ "*" ]
+
+[[images]]
+name = "gcr.io/cadvisor/cadvisor"
+exclude = [ "latest" ]
+
+[[images]]
+name = "redis"
+include = [ ".*-alpine" ]
+exclude = [ ".*rc.*" ]
